@@ -1,39 +1,41 @@
 ﻿# Marketplace PPL
 
 [![PHP](https://img.shields.io/badge/PHP-8.2+-8892bf?logo=php)](https://www.php.net)
-[![Laravel](https://img.shields.io/badge/Laravel-12.x-red?logo=laravel)](https://laravel.com)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-06b6d4?logo=tailwindcss)](https://tailwindcss.com)
-[![Vite](https://img.shields.io/badge/Vite-7.x-646cff?logo=vite)](https://vitejs.dev)
+[![Laravel](https://img.shields.io/badge/Laravel-12.0-red?logo=laravel)](https://laravel.com)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4-06b6d4?logo=tailwindcss)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-7.2-646cff?logo=vite)](https://vitejs.dev)
 [![Pest](https://img.shields.io/badge/Testing-Pest-blue?logo=pestphp)](https://pestphp.com)
 
-Marketplace PPL is a portfolio-ready Laravel marketplace prototype engineered to showcase professional-grade web development practices, role-based workflows, and operational business logic. The repository is optimized for GitHub presentation and demonstrates clean architecture, full-stack integration, and practical Laravel tooling.
+Marketplace PPL is a Laravel marketplace application built as a course assignment to demonstrate full-stack web development capabilities. It implements a realistic multi-role marketplace with seller onboarding, admin approval workflows, and transactional email—showcasing practical Laravel patterns, clean architecture, and modern web development tooling.
 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Why this project](#why-this-project)
+- [Learning Objectives](#learning-objectives)
 - [Core Capabilities](#core-capabilities)
 - [Built With](#built-with)
 - [Repository Structure](#repository-structure)
 - [Quick Start](#quick-start)
 - [Commands](#commands)
 - [Testing](#testing)
-- [Portfolio Value](#portfolio-value)
-- [Future Expansion](#future-expansion)
+- [Technical Highlights](#technical-highlights)
 
 ## Overview
 
 Marketplace PPL is a multi-role marketplace application with dedicated seller onboarding, administrative approval workflows, and secure email activation. It models a realistic business process where sellers register, submit required documentation, and await verification before gaining access to platform functionality.
 
-## Why this project
+## Learning Objectives
 
-This repository is designed to present the strongest possible professional story on GitHub:
+This project demonstrates competency in:
 
-- Demonstrates practical Laravel development beyond boilerplate
-- Shows secure, operational workflow implementation
-- Includes integration points for email, file storage, and validation
-- Supports repeatable setup via migrations, seeders, and npm/Vite tooling
-- Makes it easy for recruiters and technical reviewers to understand the project at a glance
+- Full-stack Laravel application architecture and request lifecycle
+- Secure role-based authentication and authorization patterns
+- Stateful workflow orchestration and business logic implementation
+- Database design with migrations, relationships, and seeders
+- Form validation and request handling best practices
+- Email service integration and transactional workflows
+- Modern frontend tooling (Vite, Tailwind CSS, Alpine.js)
+- Automated testing with Pest and behavior-driven test design
 
 ## Core Capabilities
 
@@ -127,21 +129,15 @@ Execute the test suite to validate behavior and regressions:
 ./vendor/bin/pest
 ```
 
-## Portfolio Value
+## Technical Highlights
 
-This project is structured to make a strong GitHub portfolio entry by showcasing:
+- **Workflow State Management**: Implements seller approval pipeline with email notifications at each stage
+- **Request Validation**: Centralized form request classes with custom validation rules
+- **Clean Architecture**: Separation of concerns across controllers, models, requests, and mailable classes
+- **Database Relationships**: Eloquent relationships and migrations that model realistic business domains
+- **Email Integration**: Laravel Mail with mailable classes for transactional notifications
+- **Asset Pipeline**: Vite integration for fast development and optimized production builds
+- **Automated Setup**: Composer and npm scripts for repeatable development environment setup
+- **Test Coverage**: Pest tests validating authentication, authorization, and workflow behavior
 
-- end-to-end Laravel application design
-- robust onboarding and approval workflows
-- reusable validation and architecture patterns
-- modern frontend tooling with Tailwind CSS and Vite
-- automated setup and repeatable developer onboarding
 
-## Future Expansion
-
-Marketplace PPL is intentionally structured for extension into a commercial marketplace with:
-
-- product catalog and search
-- order and payment management
-- analytics and reporting
-- API integration and microservice readiness
